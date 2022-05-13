@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>OLX Crawler results</h1>
+    <br>
+    <h2>Caini : {{dogNumber}}<h2>
+        <ul>
+            <p>Rase :</p>
+            <ul>
+                {% for category in dogBreeds %}
+                    < li>{{category}} : {{dogBreeds[category]}}</li>
+                {% endfor %}
+            </ul>
+            <p>Culori :</p>
+            <ul>
+                {% for category in dogColor %}
+                    <li>{{category}} : {{dogColor[category]}}</li>
+                {% endfor %}
+            </ul>
+            <p>Pui : {{dogBabies}}</p>
+            <ul>
+                <li>Mai mici de un an: {{dogSmallerThanAYear}}</li> 
+                <li>Mai mari de un an : {{dogOlderThan1Year}}</li>
+            </ul>
+            <p>Sterlizat : {{dogSterilized}}</p>
+
+        </ul>
+    <h2>Pisici : {{catNumber}}<h2>
+        <ul>
+            <p>Rase :</p>
+            <ul>
+                {% for category in catBreeds %}
+                    <li>{{category}} : {{catBreeds[category]}}</li>
+                {% endfor %}
+            </ul>
+            <p>Culori :</p>
+            <ul>
+                {% for category in catColor %}
+                    <li>{{category}} : {{catColor[category]}}</li>
+                {% endfor %}
+            </ul>
+            <p>Pui : {{catBabies}}</p>
+            <ul>
+                <li>Mai mici de un an: {{catSmallerThanAYear}}</li> 
+                <li>Mai mari de un an : {{catOlderThan1Year}}</li>
+            </ul>
+            <p>Sterlizat : {{catSterilized}}</p>
+
+        </ul>
+    <h2>Papagali : {{parrotNumber}}<h2>
+        <ul>
+            <p>Rase :</p>
+            <ul>
+                {% for category in parrotBreeds %}
+                    <li>{{category}} : {{parrotBreeds[category]}}</li>
+                {% endfor %}
+            </ul>
+            <p>Culori :</p>
+            <ul>
+                {% for category in catColor %}
+                    <li>{{category}} : {{parrotColor[category]}}</li>
+                {% endfor %}
+            </ul>
+        </ul>
+    <h2>Pesti : {{fishNumber}}<h2>
+        <ul>
+            <p>Rase :</p>
+            <ul>
+                {% for category in fishBreeds %}
+                    <li>{{category}} : {{fishBreeds[category]}}</li>
+                {% endfor %}
+            </ul>
+        </ul>
+        <p>Pui(caini/pisici) : {{anyBaby}}</p>
+        <p>Caini si pisici cu pedigree : {{PedigreeAnything}}</p>
+        <p>Mancare pentru animale :  {{animalFood}}</p>
+        <p>Obiete pentru animale : {{animalObjects}}</p>
+    
+    
+</body>
+</html>
