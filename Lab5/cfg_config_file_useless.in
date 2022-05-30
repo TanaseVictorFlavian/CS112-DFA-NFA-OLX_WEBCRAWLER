@@ -1,0 +1,24 @@
+Variables:
+A
+B
+C
+S
+End
+
+Start state:
+S
+End
+
+Terminals:
+a
+b
+c
+d
+End
+
+Rules:
+S -> abS|abA|abB
+A -> cd
+B -> aB
+C -> dc
+End

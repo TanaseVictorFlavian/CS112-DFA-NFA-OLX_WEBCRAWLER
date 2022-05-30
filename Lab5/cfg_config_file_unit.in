@@ -1,0 +1,31 @@
+Variables:
+X
+Y
+Z
+M
+N
+P
+S
+End
+
+Start state:
+S
+End
+
+Terminals:
+a
+b
+c
+d
+e
+End
+
+Rules:
+S -> XY
+X -> a
+Y -> Z|b
+M -> N
+Z -> M
+N -> a|b
+P -> e
+End

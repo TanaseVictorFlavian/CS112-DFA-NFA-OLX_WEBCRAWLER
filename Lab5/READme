@@ -1,0 +1,45 @@
+Template for the config file :
+
+Variables:
+
+Variable1 
+Variable2
+.
+.
+.
+VariableN
+End
+
+Start state:
+
+Variable
+End
+
+Terminals:
+
+Terminal1
+Terminal2
+Terminal3
+.
+.
+.
+.
+TerminalN
+End
+
+Rules:
+
+S -> rule1
+VaribleK -> rule2
+.
+.
+.
+End
+
+
+
+
+
+
+
+
